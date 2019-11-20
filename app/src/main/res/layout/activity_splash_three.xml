@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/splashthree"
+    tools:context=".SplashTwo">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="222dp"
+        android:weightSum="2">
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="30dp"
+            android:layout_weight="1"
+            android:background="@drawable/rounded_button"
+            android:onClick="SignIn"
+            android:paddingStart="@dimen/padding_button_main"
+            android:paddingLeft="@dimen/padding_button_main"
+            android:paddingEnd="@dimen/padding_button_main"
+            android:paddingRight="@dimen/padding_button_main"
+            android:text="@string/sign_in_text"
+            android:textAllCaps="false"
+            android:textColor="@color/text_color_main"
+            android:textSize="18sp"
+            android:typeface="serif"
+            tools:ignore="ButtonStyle,ObsoleteLayoutParam,RtlSymmetry" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="30dp"
+            android:layout_weight="1"
+            android:background="@drawable/rounded_button"
+            android:onClick="SignUp"
+            android:paddingStart="@dimen/padding_button_main"
+            android:paddingLeft="@dimen/padding_button_main"
+            android:paddingEnd="@dimen/padding_button_main"
+            android:paddingRight="@dimen/padding_button_main"
+            android:text="@string/sign_up_text"
+            android:textAllCaps="false"
+            android:textColor="@color/text_color_main"
+            android:textSize="18sp"
+            android:typeface="serif"
+            tools:ignore="ButtonStyle,ObsoleteLayoutParam,RelativeOverlap" />
+    </LinearLayout>
+</RelativeLayout>

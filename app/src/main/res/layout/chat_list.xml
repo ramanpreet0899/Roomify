@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/linea_layout_chat_main"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingLeft="20sp"
+    android:paddingRight="20sp"
+    android:paddingBottom="40sp"
+    android:paddingTop="20dp"
+    android:visibility="visible"
+    android:weightSum="11">
+
+    <ImageView
+        android:id="@+id/chat_image"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:src="@drawable/person" />
+
+    <LinearLayout
+        android:id="@+id/layoutChat1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_weight="9"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+
+        <TextView
+            android:id="@+id/text_username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="UserName"
+            android:textSize="18sp"
+            android:typeface="serif"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/text_lastmessage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:hint="last message"
+            android:typeface="serif"
+            android:maxLines="1"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/text_lastmessageUnread"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:hint="last message"
+            android:typeface="serif"
+            android:visibility="visible" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView_timeLastMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:gravity="end"
+        android:text="yesterday"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="12sp"
+        android:typeface="serif"
+        android:visibility="visible" />
+
+    <ImageView
+        android:id="@+id/imagevIew_next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="2"
+        android:src="@drawable/ic_navigate_next_black_24dp"
+        android:visibility="visible" />
+</LinearLayout>
+
